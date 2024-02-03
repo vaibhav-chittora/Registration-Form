@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registration-Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-secondary bg-gradient text-white vh-100 overflow-hidden">
+    <h1 class="text-center mt-5 fst-italic fw-bold text-decoration-underline">Registration-Form</h1>
+    <div class="d-flex align-items-center justify-content-around mt-15 p-5">
+      <img
+        src="istockphoto-481099400-612x612.jpg"
+        class="border rounded-pill"
+        alt=""
+        height="400px"
+        width="400px"
+      />
+
+      <div class="flex-column align-items-center center ">
+        <div class="center text-center">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="100"
+            height="120"
+            fill="currentColor"
+            class="bi bi-person-circle"
+            viewBox="0 0 16 16"
+          >
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+            <path
+              fill-rule="evenodd"
+              d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+            />
+          </svg>
+        </div>
+        <h2>Sign in to your Account</h2>
+
+        <form method="POST" action="/sign_up">
+          <div class="mb-3">
+            <label for="exampleInputName" class="form-label"
+              >Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="exampleInputName"
+              aria-describedby=""
+              placeholder="Enter your name" required
+            />
+
+            <label for="exampleInputEmail1" class="form-label"
+              >Email address</label
+            >
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Test@gmail.com" required
+            />
+            <div id="emailHelp" action="/register" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Enter your password..." required
+            />
+          </div>
+          <!-- <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div> -->
+          <div class="d-grid gap-2">
+            <button class="btn btn-dark" type="submit" value="submit">Login</button>
+          </div>
+        </form>
+        <div class="form-text">Forgot password?</div>
+        <div>
+          Don't have an account? -
+          <a href="#" class="text-white">Register Here</a>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
